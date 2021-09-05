@@ -60,7 +60,7 @@ function getName() {
         document.getElementById('output-results').textContent = "You were born on a " + daysOfWeek[index] + ", your Akan name is" + femaleNames[index];
         return false;
     } else {
-        alert("Please enter valid month and date")
+        alert("Please enter valid month and date");
     }
 
 
