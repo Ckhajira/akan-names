@@ -13,12 +13,13 @@
     <p>Please select your gender:</p>
     <form>
         <label for="male">Male</label>
-        <input type="radio" name="gender" value="male">
+        <input id="male-entry" type="radio" name="gender" value="male">
+
         <label for="female">Female</label>
-        <input type="radio" name="gender" value="female">
+        <input id="female-entry" type="radio" name="gender" value="female">
 
     </form>
-    <form>
+    <form onsubmit="return ">
         <label for="yy">Year</label>
         <input id="year-entry" type="number" placeholder="yyyy">
 
