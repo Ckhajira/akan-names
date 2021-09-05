@@ -30,4 +30,10 @@ function getName() {
     ((5 * Number(year.slice(2, 4)) / 4)) + ((26 * (month + 1) / 10)) + day) % 7);
 
     
+    if(extractedGender == "male" && monthChecker){
+        switch(dayofWeekNumber){
+            case 1:
+                
+        }
+    }
 }
