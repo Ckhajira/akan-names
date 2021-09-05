@@ -73,5 +73,49 @@ function getName() {
                 break;
 
         }
+    } else if (extractedGender == "female" && monthChecker) {
+        switch (dayofWeekNumber) {
+            case 0:
+                document.getElementById('output-results').textContent("You were born on Sunday. Your Akan name is" + femaleNames[0]);
+                return false;
+                break;
+
+            case 1:
+                document.getElementById('output-results').textContent("You were born on Sunday. Your Akan name is" + femaleNames[0]);
+                return false;
+                break;
+
+            case 2:
+                document.getElementById('output-results').textContent("You were born on Monday. Your Akan name is" + femaleNames[1]);
+                return false;
+                break;
+
+            case 3:
+                document.getElementById('output-results').textContent("You were born on Tuesday. Your Akan name is" + femaleNames[2]);
+                return false;
+                break;
+
+            case 4:
+                document.getElementById('output-results').textContent("You were born on Wednesday. Your Akan name is" + femaleNames[3]);
+                return false;
+                break;
+
+            case 5:
+                document.getElementById('output-results').textContent("You were born on Thursday. Your Akan name is" + femaleNames[4]);
+                return false;
+                break;
+
+            case 6:
+                document.getElementById('output-results').textContent("You were born on Friday. Your Akan name is" + femaleNames[5]);
+                return false;
+                break;
+
+            case 7:
+                document.getElementById('output-results').textContent("You were born on Saturday. Your Akan name is" + femaleNames[6]);
+                return false;
+                break;
+
+        }
+
     }
 }
