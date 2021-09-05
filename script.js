@@ -24,7 +24,7 @@ function getName() {
             return true;
     }
 
-    let monthChecker = validMonth;
+    let monthChecker = validMonth();
 
     let dayOfWeekNumber = Math.floor((((Number(year.slice(0, 2)) / 4) - 2 * Number(year.slice(0, 2)) - 1) +
     ((5 * Number(year.slice(2, 4)) / 4)) + ((26 * (month + 1) / 10)) + day) % 7);
@@ -33,7 +33,9 @@ function getName() {
     if(extractedGender == "male" && monthChecker){
         switch(dayofWeekNumber){
             case 1:
+                document.getElementById('output-results').textContent("You were born on Sunday. Your Akan name is" + maleNames[0]);
                 
+
         }
     }
 }
