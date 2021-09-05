@@ -15,5 +15,6 @@ function getName() {
             }
         }
     }
+    let extractedGender = findGender();
 
 }
