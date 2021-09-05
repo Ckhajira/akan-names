@@ -4,7 +4,8 @@ function getName() {
     let day = Number(document.getElementById("day-entry").value);
 
     let genders = document.getElementsByName("gender");
-    let dayOfTheWeek = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday"];
+
+    let dayOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Kwaku", "Yaw", "Kofi", "Kwame"];
     let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
@@ -27,8 +28,23 @@ function getName() {
 
     let monthChecker = validMonth();
 
-    let dayOfWeekNumber = Math.floor((((Number(year.slice(0,2))/4)-2*Number(year.slice(0,2))-1)+
-    ((5*Number(year.slice(2,4))/4))+((26*(month+1)/10))+day)%7);
+    let dayOfWeekNumber = Math.floor((((Number(year.slice(0, 2)) / 4) - 2 * Number(year.slice(0, 2)) - 1) +
+        ((5 * Number(year.slice(2, 4)) / 4)) + ((26 * (month + 1) / 10)) + day) % 7);
+
+    let index;
+    if (dayOfWeekNumber == 0) {
+        index = 6;
+    } else {
+        index = dayOfWeekNumber - 1;
+    }
+
+
+    if (dayOfWeekNumber == 0) {
+        index = 6;
+    } else {
+        index = dayOfWeekNumber - 1;
+    }
+
 
 
     if (extractedGender == "male" && monthChecker) {
