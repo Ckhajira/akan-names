@@ -114,8 +114,12 @@ function getName() {
                 document.getElementById('output-results').textContent("You were born on Saturday. Your Akan name is" + femaleNames[6]);
                 return false;
                 break;
+            default:
+                alert("No Akan name found")
 
         }
 
+    }else{
+        alert("You entered the wrong month or day")
     }
 }
