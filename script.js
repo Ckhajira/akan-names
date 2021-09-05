@@ -7,4 +7,13 @@ function getName() {
     let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Kwaku", "Yaw", "Kofi", "Kwame"];
     let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
+    function findGender() {
+        let gender;
+        for (gender in genders) {
+            if (gender.checked) {
+                return gender.value;
+            }
+        }
+    }
+
 }
