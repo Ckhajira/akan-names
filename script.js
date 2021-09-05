@@ -17,4 +17,11 @@ function getName() {
     }
     let extractedGender = findGender();
 
+    function validMonth() {
+        if (month <= 0 || month > 12) {
+            return false;
+        } else
+            return true;
+    }
+
 }
