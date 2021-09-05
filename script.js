@@ -5,25 +5,28 @@ function getName() {
 
     let genders = document.getElementsByName("gender");
 
-    let dayOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Kwaku", "Yaw", "Kofi", "Kwame"];
     let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
     function findGender() {
-        let gender;
-        for (gender in genders) {
+
+        for (let gender of genders) {
             if (gender.checked) {
                 return gender.value;
             }
         }
     }
     let extractedGender = findGender();
+    
+    console.log(extractedGender);
 
     function validMonth() {
-        if (month <= 0 || month > 12) {
+        if (month < 1 || month > 12) {
             return false;
-        } else
+        } else{
             return true;
+        }
     }
 
     let monthChecker = validMonth();
@@ -38,105 +41,13 @@ function getName() {
         index = dayOfWeekNumber - 1;
     }
 
-
-    if (dayOfWeekNumber == 0) {
-        index = 6;
-    } else {
-        index = dayOfWeekNumber - 1;
+    if (extractedGender == "male") {
+        document.getElementById('output-results').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleNames[index];
+        return false;
+    }else{
+        alert("Loser")
     }
 
 
 
-    if (extractedGender == "male" && monthChecker) {
-        switch (dayofWeekNumber) {
-            case 0:
-                document.getElementById('output-results').textContent("You were born on Sunday. Your Akan name is" + maleNames[0]);
-                return false;
-                break;
-
-            case 1:
-                document.getElementById('output-results').textContent("You were born on Sunday. Your Akan name is" + maleNames[0]);
-                return false;
-                break;
-
-            case 2:
-                document.getElementById('output-results').textContent("You were born on Monday. Your Akan name is" + maleNames[1]);
-                return false;
-                break;
-
-            case 3:
-                document.getElementById('output-results').textContent("You were born on Tuesday. Your Akan name is" + maleNames[2]);
-                return false;
-                break;
-
-            case 4:
-                document.getElementById('output-results').textContent("You were born on Wednesday. Your Akan name is" + maleNames[3]);
-                return false;
-                break;
-
-            case 5:
-                document.getElementById('output-results').textContent("You were born on Thursday. Your Akan name is" + maleNames[4]);
-                return false;
-                break;
-
-            case 6:
-                document.getElementById('output-results').textContent("You were born on Friday. Your Akan name is" + maleNames[5]);
-                return false;
-                break;
-
-            case 7:
-                document.getElementById('output-results').textContent("You were born on Saturday. Your Akan name is" + maleNames[6]);
-                return false;
-                break;
-
-        }
-    } else if (extractedGender == "female" && monthChecker) {
-        switch (dayofWeekNumber) {
-            case 0:
-                document.getElementById('output-results').textContent("You were born on Sunday. Your Akan name is" + femaleNames[0]);
-                return false;
-                break;
-
-            case 1:
-                document.getElementById('output-results').textContent("You were born on Sunday. Your Akan name is" + femaleNames[0]);
-                return false;
-                break;
-
-            case 2:
-                document.getElementById('output-results').textContent("You were born on Monday. Your Akan name is" + femaleNames[1]);
-                return false;
-                break;
-
-            case 3:
-                document.getElementById('output-results').textContent("You were born on Tuesday. Your Akan name is" + femaleNames[2]);
-                return false;
-                break;
-
-            case 4:
-                document.getElementById('output-results').textContent("You were born on Wednesday. Your Akan name is" + femaleNames[3]);
-                return false;
-                break;
-
-            case 5:
-                document.getElementById('output-results').textContent("You were born on Thursday. Your Akan name is" + femaleNames[4]);
-                return false;
-                break;
-
-            case 6:
-                document.getElementById('output-results').textContent("You were born on Friday. Your Akan name is" + femaleNames[5]);
-                return false;
-                break;
-
-            case 7:
-                document.getElementById('output-results').textContent("You were born on Saturday. Your Akan name is" + femaleNames[6]);
-                return false;
-                break;
-            default:
-                alert("No Akan name found");
-
-        }
-
-    } else {
-        alert("You entered the wrong month or day");
-    }
 }
