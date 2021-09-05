@@ -1,6 +1,6 @@
 function getName(){
-    let year = document.getElementById("year-entry");
-    
+    let year = document.getElementById("year-entry").value;
+
     
 
 }
