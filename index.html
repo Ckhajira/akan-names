@@ -17,7 +17,7 @@
 
         <label for="female">Female</label>
         <input id="female-entry" type="radio" name="gender" value="female">
-        
+
         <br>
 
         <label for="yy">Year</label>
@@ -29,13 +29,15 @@
         <label for="dd">Day</label>
         <input id="day-entry" type="number" placeholder="dd">
 
-        <input id="get-name" type="submit">
+        <input id="get-name" type="submit" value="submit">
     </form>
-    
+
 
     <p id="output-results"></p>
 
-    
+    <form onsubmit="return clearInput()">
+        <input class="clear" type="submit" value="Clear Form">
+    </form>
 
 
 
