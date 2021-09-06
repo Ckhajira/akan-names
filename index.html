@@ -10,36 +10,45 @@
 </head>
 
 <body class="background-clr">
-    <p>Please select your gender:</p>
-    <p>Akan names </p>
-    <form onsubmit="return getName()">
-        <label for="male">Male</label>
-        <input id="male-entry" type="radio" name="gender" value="male">
+    <div class="content">
+        <p>The Akan population of Ghana frequently name their children after the day of the week they were born and the
+            order in which they were born.
 
-        <label for="female">Female</label>
-        <input id="female-entry" type="radio" name="gender" value="female">
+            These names are derived from the Ghananian culture.
 
-        <br>
+            These is an application that will calculate the day of the week that someone was born depending on their
+            date of
+            birth and give them an akan name based on their gender.</p>
+        <p>Please select your gender:</p>
 
-        <label for="yy">Year</label>
-        <input id="year-entry" type="number" placeholder="yyyy">
+        <form onsubmit="return getName()">
+            <label for="male">Male</label>
+            <input id="male-entry" type="radio" name="gender" value="male">
 
-        <label for="mm">Month</label>
-        <input id="month-entry" type="number" placeholder="mm">
+            <label for="female">Female</label>
+            <input id="female-entry" type="radio" name="gender" value="female">
 
-        <label for="dd">Day</label>
-        <input id="day-entry" type="number" placeholder="dd">
+            <br>
 
-        <input id="get-name" type="submit" >
-    </form>
+            <label for="yy">Year</label>
+            <input id="year-entry" type="number" placeholder="yyyy">
+
+            <label for="mm">Month</label>
+            <input id="month-entry" type="number" placeholder="mm">
+
+            <label for="dd">Day</label>
+            <input id="day-entry" type="number" placeholder="dd">
+
+            <input id="get-name" type="submit">
+        </form>
 
 
-    <p id="output-results"></p>
+        <p id="output-results"></p>
 
-    <form onsubmit="return clearInput()">
-        <input class="clear" type="submit" value="Clear Form">
-    </form>
-
+        <form onsubmit="return clearInput()">
+            <input class="clear" type="submit" value="Clear Form">
+        </form>
+    </div>
 
 
     <script src="./script.js"></script>
