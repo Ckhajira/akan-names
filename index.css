@@ -18,7 +18,7 @@ body {
     padding: 0;
     font-family: Poppins;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
 
 
 }
@@ -27,7 +27,7 @@ body {
     width: 600px;
     height: 100vh;
     background-color: rgba(172, 102, 37, 0.75);
-    padding-top: 10px;
+    padding-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
 
