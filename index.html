@@ -11,19 +11,20 @@
 
 <body class="background-clr">
     <div class="content">
+        <h1>AKAN NAME</h1>
         <p>The Akan population of Ghana frequently name their children after the day of the week they were born and the
             order in which they were born.
 
             These names are derived from the Ghananian culture.
 
-            These is an application that will calculate the day of the week that someone was born depending on their
+            This is an application that will calculate the day of the week that someone was born depending on their
             date of
             birth and give them an akan name based on their gender.</p>
         <p>Please select your gender:</p>
 
         <form onsubmit="return getName()">
             <label for="male">Male</label>
-            <input id="male-entry" type="radio" name="gender" value="male">
+            <input id="male-entry" type="radio" name="gender" value="male" class="male-styling">
 
             <label for="female">Female</label>
             <input id="female-entry" type="radio" name="gender" value="female">
@@ -31,19 +32,19 @@
             <br>
 
             <label for="yy">Year</label>
-            <input id="year-entry" type="number" placeholder="yyyy">
+            <input id="year-entry" type="number" placeholder="yyyy" class="text-form">
 
             <label for="mm">Month</label>
-            <input id="month-entry" type="number" placeholder="mm">
+            <input id="month-entry" type="number" placeholder="mm" class="text-form">
 
             <label for="dd">Day</label>
-            <input id="day-entry" type="number" placeholder="dd">
+            <input id="day-entry" type="number" placeholder="dd" class="text-form">
 
-            <input id="get-name" type="submit">
+            <input id="get-name" type="submit" class="submit-style">
         </form>
 
 
-        <p id="output-results"></p>
+        <p id="output-results" class="output-results-styles"></p>
 
         <form onsubmit="return clearInput()">
             <input class="clear" type="submit" value="Clear Form">
