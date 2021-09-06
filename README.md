@@ -30,6 +30,10 @@ Below is a brief summary of the features that the website provides:
 
 ## Technologies Used
 This project uses HTML, CSS and JavaScript.
+
+## Project Design
+![](images/akan-design.png)
+
 ## Support and contact details
 If you have any issues or questions, you can get intouch with me through email: christopher.khajira@student.moringaschool.com. Please feel free to make any contributions to the code.
 
